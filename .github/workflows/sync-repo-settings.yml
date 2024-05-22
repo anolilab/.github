@@ -1,0 +1,43 @@
+name: "Sync Repository Settings"
+
+on:
+    workflow_dispatch:
+        inputs:
+            repo:
+                description: "Repository Name to run on"
+                required: false
+                default: "all"
+
+jobs:
+    master-settings-sync:
+        strategy:
+            matrix:
+                repo:
+                    - "javascript-style-guide"
+                    - "renovate-config"
+                    - "resume"
+                    - "resume-schema"
+                    - "semantic-release"
+                    - "single-repo-template"
+                    - "sponsors"
+                    - "template-sync-action"
+                    - "workflows"
+
+        runs-on: "ubuntu-latest"
+        steps:
+            - name: "Git checkout"
+              if: "matrix.repo == inputs.repo || inputs.repo == 'all'"
+              uses: "actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11" # v4.1.1
+              env:
+                  GIT_COMMITTER_NAME: "GitHub Actions Shell"
+                  GIT_AUTHOR_NAME: "GitHub Actions Shell"
+                  EMAIL: "github-actions[bot]@users.noreply.github.com"
+
+            - name: "Sync Repo Settings"
+              if: "matrix.repo == inputs.repo || inputs.repo == 'all'"
+              uses: "andrewthetechie/gha-repo-manager@78aa01f9ff17bde7b78e879b59b0464213f88a03" # v1.7.2
+              with:
+                  action: "apply"
+                  settings_file: ".github/config/repo-settings.yml"
+                  token: "${{ secrets.ANOLILAB_REPO_TOKEN }}"
+                  repo: "anolilab/${{ matrix.repo }}"
