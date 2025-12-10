@@ -23,33 +23,16 @@ Anolilab is your innovative Dev-Studio and AI-Studio, building custom software s
 
 ## Services
 
-We offer a comprehensive range of development and optimization services:
+Frontend & Backend Development • AI Services & Automation • Headless CMS • E-commerce • Technical Audits • Performance Optimization • Accessibility • Support & Maintenance
 
-- **Frontend Development** - Modern, fast, and responsive interfaces
-- **Backend Development** - Robust and scalable backend systems
-- **AI Services / Automation** - Custom AI solutions and automation
-- **Headless CMS Implementation & Migration** - Flexible content management
-- **E-commerce Development** - High-performing online stores
-- **Technical Audit** - Deep analysis of architecture and performance
-- **Core Web Vitals Optimization** - Improve speed and search rankings
-- **Headless CMS Optimization** - Fine-tune your CMS setup
-- **Accessibility Optimization** - WCAG compliant experiences
-- **Support & Maintenance** - Ongoing support and updates
+## Open Source
 
-## Our Approach
+### [Visulima](https://github.com/visulima)
 
-### Direct Collaboration
-Work directly with the expert building your project. No layers of management, just clear communication and faster decisions.
+Node.js-focused organization delivering elegant, developer-friendly libraries. Our tools emphasize simplicity and readability.
 
-### Full-Stack Expertise
-From sleek frontend design to robust backend systems, we handle every aspect of your project in-house for seamless integration.
-
-### Performance-Focused
-We build with modern technologies and best practices, focusing on speed, accessibility, and Core Web Vitals for optimal user experience and SEO.
-
-## Tech Stack
-
-Empowering innovation with a cutting-edge tech stack designed for speed, scalability, quality and seamless collaboration.
+- 🚀 **[Visulima](https://github.com/visulima/visulima)** - Developer-focused tools and libraries
+- 📦 **[Packem](https://github.com/visulima/packem)** - Fast bundler for Node.js and TypeScript
 
 ## Get Started
 
@@ -64,7 +47,5 @@ Ready to build something great? Let's talk about your project.
 <div align="center">
 
 **Every project we take on is developed for long-term success.**
-
-Made with ❤️ by [Daniel Bannert](https://x.com/_prisis_)
 
 </div>
